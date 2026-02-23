@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jérémie Nougier – Géomaticien</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="images/logo_page.png" type="image/png">
+
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">JN.</div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#experiences">Expériences</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="accueil" class="hero">
+    <div class="hero-content">
+        <h1>Jérémie Nougier</h1>
+        <h2><span id="typing"></span></h2>
+        <p>Étudiant en géomatique | SIG, télédétection & analyse spatiale</p>
+        <a href="#contact" class="btn">Me contacter</a>
+    </div>
+</section>
+
+<section id="apropos" class="section">
+    <h2>À propos</h2>
+    <p>
+        Futur géomaticien passionné par l’analyse satellitaire et la télédétection.
+        Je développe des solutions SIG avancées combinant Python, QGIS et webmapping
+        pour répondre aux enjeux climatiques et territoriaux.
+    </p>
+</section>
+
+<section id="competences" class="section">
+    <h2>Compétences</h2>
+
+    <div class="grille_competences">
+        <div class="categorie_competence">
+            <h3>SIG & Data</h3>
+            <ul>
+                <li>QGIS / ArcGIS</li>
+                <li>PostGIS / SQL</li>
+                <li>Rstudio</li>
+                <li>Traitement raster</li>
+                <li>Analyse spatiale</li>
+            </ul>
+        </div>
+
+        <div class="categorie_competence">
+            <h3>Programmation</h3>
+            <ul>
+                <li>Python</li>
+                <li>Arcpy</li>
+                <li>OTB (Orfeo Toolbox)</li>
+                <li>JavaScript</li>
+                <li>HTML / CSS</li>
+            </ul>
+        </div>
+
+        <div class="categorie_competence">
+            <h3>Langues</h3>
+            <ul>
+                <li>Français — natif</li>
+                <li>Anglais — avancé</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="formation" class="section">
+    <h2>Formation</h2>
+
+    <div class="liste_formation">
+        <div class="formation">
+            <h3>Université Grenoble ALpes</h3>
+            <p><strong>Diplôme :</strong> Licence en Géographie Spécialité aménagement du territoire</p>
+            <p><strong>Années :</strong> 2021 – 2024</p>
+
+        </div>
+
+        <div class="formation3">
+            <h3>Université Grenoble Alpes</h3>
+            <p><strong>Diplôme :</strong> Master 1 en Géomatique</p>
+            <p><strong>Années :</strong> 2024 – 2025</p>
+        </div>
+        
+        <div class="formation2">
+            <h3>Université Toulouse Jean Jaurès   INP-ENSAT</h3>
+            <p><strong>Diplôme :</strong> Master en Géomatique</p>
+            <p><strong>Années :</strong> 2025 – 2027</p>
+        </div>
+    </div>
+</section>
+
+<section id="experiences" class="section">
+    <h2>Expériences</h2>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <h3>Stagaire Géomaticien – 2026</h3>
+            <p>Type d'éxpérience : STAGE</p>
+            <p>Organisme : Egis Group</p>
+            <p>Durée : 6 mois</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Stagaire Cartographe / Géomaticien – 2025</h3>
+            <p>Type d'éxpérience : STAGE</p>
+            <p>Organisme : Laboratoire Pacte</p>
+            <p>Durée : 3 mois</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Stagaire Géomaticien – 2024</h3>
+            <p>Type d'éxpérience : STAGE</p>
+            <p>Organisme : Géosiapp</p>
+            <p>Durée : 1 mois</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Dessinateur SIG / Adjoint administratif territorial – 2023 & 2024</h3>
+            <p>Type d'éxpérience : CDD</p>
+            <p>Organisme : Métropole de Lyon</p>
+            <p>Durée : 4 mois</p>
+        </div>
+    </div>
+</section>
+
+<section id="projets" class="section">
+    <h2>Projets</h2>
+
+    <div class="grille_projets">
+        <article class="carte_projet">
+            <img src="images/projet1.jpg" alt="Carte de vulnérabilité urbaine face aux vagues de chaleur">
+            <h3>Vulnérabilité urbaine et chaleur</h3>
+            <p>
+                Analyse spatiale sous QGIS et Python pour identifier les zones urbaines
+                sensibles aux vagues de chaleur.
+            </p>
+            <a href="lien_vers_projet1.html" class="btn" target="_blank" rel="noopener noreferrer">Voir le projet</a>
+        </article>
+
+        <article class="carte_projet">
+            <img src="images/projet2.jpg" alt="Classification raster">
+            <h3>Classification raster</h3>
+            <p>
+                Classification d’images satellite (NBR) et analyse environnementale.
+            </p>
+            <a href="lien_vers_projet2.html" class="btn" target="_blank" rel="noopener noreferrer">Voir le projet</a>
+        </article>
+
+        <article class="carte_projet">
+            <h3>Analyse feux Los Angeles</h3>
+            <p>Classification Landsat 8 – OTB</p>
+            <a href="lien_vers_projet3.html" class="btn" target="_blank" rel="noopener noreferrer">Voir le projet</a>
+        </article>
+
+        <article class="carte_projet">
+            <h3>Plugin QGIS Naval Group</h3>
+            <p>Transformation données NAIADE</p>
+            <a href="lien_vers_projet4.html" class="btn" target="_blank" rel="noopener noreferrer">Voir le projet</a>
+        </article>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact</h2>
+
+    <form>
+        <input type="text" placeholder="Nom" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit" class="btn">Envoyer</button>
+    </form>
+
+    <div class="reseaux_sociaux">
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Jérémie Nougier – Portfolio Géomatique</p>
+</footer>
+
+</body>
+</html>
