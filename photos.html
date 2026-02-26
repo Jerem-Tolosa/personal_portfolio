@@ -5,91 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photos de jerem ;-)</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/portfolio_photo_logo.png" type="image/png">
-    
+    <link rel="icon" href="images/images_main_page/portfolio_photo_logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="album-container">
-        <!-- Catégorie 1 -->
+        <!-- Catégorie 1: Grenoble -->
         <div class="photo-category">
             <h2>Grenoble, my city</h2>
-            <div class="photo-row">
-                <div class="photo-item">
-                    <img src="images/cso2.jpg" alt="Photo 1">
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <img src="images/images_photos/grenoble/P1014956.JPG" alt="Photo 1" class="carousel-slide">
+                        <img src="images/images_photos/grenoble/P1015996.jpg" alt="Photo 2" class="carousel-slide">
+                        <img src="images/images_photos/grenoble/P1016002.jpg" alt="Photo 3" class="carousel-slide">
+                        <img src="images/images_photos/grenoble/P1016022.jpg" alt="Photo 4" class="carousel-slide">
+                        <img src="images/images_photos/grenoble/P1016028.jpg" alt="Photo 5" class="carousel-slide">
+                        <img src="images/images_photos/grenoble/P1016542.jpg" alt="Photo 6" class="carousel-slide">
+                    </div>
                 </div>
-                <div class="photo-item">
-                    <img src="chemin/vers/photo2.jpg" alt="Photo 2">
-                </div>
-                <div class="photo-item">
-                    <img src="chemin/vers/photo3.jpg" alt="Photo 3">
-                </div>
-            </div>
-            <div class="photo-row">
-                <div class="photo-item">
-                    <img src="chemin/vers/photo4.jpg" alt="Photo 4">
-                </div>
-                <div class="photo-item">
-                    <img src="chemin/vers/photo5.jpg" alt="Photo 5">
-                </div>
-                <div class="photo-item">
-                    <img src="chemin/vers/photo6.jpg" alt="Photo 6">
-                </div>
+                <button class="carousel-btn prev" onclick="moveCarousel(event, -1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" onclick="moveCarousel(event, 1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-dots"></div>
             </div>
         </div>
 
-        <!-- Catégorie 2 -->
+        <!-- Catégorie 2: Concarneau -->
         <div class="photo-category">
             <h2>Concarneau, the North</h2>
-            <div class="photo-row">
-                <div class="photo-item">
-                    <img src="chemin/vers/photo7.jpg" alt="Photo 7">
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <img src="images/images_photos/concarneau/P1015518_01.jpg" alt="Photo 7" class="carousel-slide">
+                        <img src="images/images_photos/concarneau/P1015519.jpg" alt="Photo 8" class="carousel-slide">
+                        <img src="images/images_photos/concarneau/P1015534_01.jpg" alt="Photo 9" class="carousel-slide">
+                        <img src="images/images_photos/concarneau/P1015559_01.jpg" alt="Photo 10" class="carousel-slide">
+                        <img src="images/images_photos/concarneau/P1015719.jpg" alt="Photo 11" class="carousel-slide">
+                        <img src="images/images_photos/concarneau/P1015784.jpg" alt="Photo 12" class="carousel-slide">
+                    </div>
                 </div>
-                <div class="photo-item">
-                    <img src="chemin/vers/photo8.jpg" alt="Photo 8">
-                </div>
-                <div class="photo-item">
-                    <img src="chemin/vers/photo9.jpg" alt="Photo 9">
-                </div>
-            </div>
-            <div class="photo-row">
-                <div class="photo-item">
-                    <img src="chemin/vers/photo10.jpg" alt="Photo 10">
-                </div>
-                <div class="photo-item">
-                    <img src="chemin/vers/photo11.jpg" alt="Photo 11">
-                </div>
-                <div class="photo-item">
-                    <img src="chemin/vers/photo12.jpg" alt="Photo 12">
-                </div>
+                <button class="carousel-btn prev" onclick="moveCarousel(event, -1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" onclick="moveCarousel(event, 1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-dots"></div>
             </div>
         </div>
 
-        <!-- Catégorie 3 -->
+        <!-- Catégorie 3: Toulouse -->
         <div class="photo-category">
             <h2>Toulouse, new home</h2>
-            <div class="photo-row">
-                <div class="photo-item">
-                    <img src="chemin/vers/photo13.jpg" alt="Photo 13">
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <img src="images/images_photos/toulouse/P1016646.png" alt="Photo 13" class="carousel-slide">
+                        <img src="images/images_photos/toulouse/P1016650.png" alt="Photo 14" class="carousel-slide">
+                        <img src="images/images_photos/toulouse/P1016656.png" alt="Photo 15" class="carousel-slide">
+                        <img src="images/images_photos/toulouse/P1016692.png" alt="Photo 16" class="carousel-slide">
+                        <img src="images/images_photos/toulouse/P1016699.png" alt="Photo 17" class="carousel-slide">
+                        <img src="images/images_photos/toulouse/P1016713.png" alt="Photo 18" class="carousel-slide">
+                    </div>
                 </div>
-                <div class="photo-item">
-                    <img src="chemin/vers/photo14.jpg" alt="Photo 14">
-                </div>
-                <div class="photo-item">
-                    <img src="chemin/vers/photo15.jpg" alt="Photo 15">
-                </div>
+                <button class="carousel-btn prev" onclick="moveCarousel(event, -1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" onclick="moveCarousel(event, 1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-dots"></div>
             </div>
-            <div class="photo-row">
-                <div class="photo-item">
-                    <img src="chemin/vers/photo16.jpg" alt="Photo 16">
+        </div>
+
+        <!-- Catégorie 4: England -->
+        <div class="photo-category">
+            <h2>England, first trip</h2>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <img src="images/images_photos/england/P1016230.JPG" alt="Photo 19" class="carousel-slide">
+                        <img src="images/images_photos/england/P1016233.JPG" alt="Photo 20" class="carousel-slide">
+                        <img src="images/images_photos/england/P1016241.JPG" alt="Photo 21" class="carousel-slide">
+                        <img src="images/images_photos/england/P1016335.JPG" alt="Photo 22" class="carousel-slide">
+                        <img src="images/images_photos/england/P1016392.JPG" alt="Photo 23" class="carousel-slide">
+                        <img src="images/images_photos/england/P1016428.JPG" alt="Photo 24" class="carousel-slide">
+                    </div>
                 </div>
-                <div class="photo-item">
-                    <img src="chemin/vers/photo17.jpg" alt="Photo 17">
-                </div>
-                <div class="photo-item">
-                    <img src="chemin/vers/photo18.jpg" alt="Photo 18">
-                </div>
+                <button class="carousel-btn prev" onclick="moveCarousel(event, -1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" onclick="moveCarousel(event, 1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-dots"></div>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
