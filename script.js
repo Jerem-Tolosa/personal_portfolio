@@ -16,7 +16,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 // Animation de typing
-const text = ["Géomaticien", "Spécialiste SIG", "Analyse satellitaire", "Webmapping"];
+const text = ["Ardéchois", "Grenoblois", "Toulousain",];
 let count = 0;
 let index = 0;
 let currentText = "";

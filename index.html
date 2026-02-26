@@ -6,7 +6,10 @@
     <title>Jérémie Nougier – Géomaticien</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-    <link rel="icon" href="images/logo_page.png" type="image/png">
+    <link rel="icon" href="images/images_main_page/logo_page.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>#map { height: 400px; }</style>
 
 </head>
 
@@ -21,11 +24,11 @@
         </button>
         <ul class="nav-links" id="nav-menu">
             <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#experiences">Expériences</a></li>
-            <li><a href="#formation">Formation</a></li>
-            <li><a href="#projets">Projets</a></li>
+            <li><a href="#apropos">Me connaitre</a></li>
+            <li><a href="#competences">Ce que je sais faire</a></li>
+            <li><a href="#experiences">Mes Expériences</a></li>
+            <li><a href="#formation">Ma Formation</a></li>
+            <li><a href="#projets">Mes Projets</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -36,120 +39,157 @@
         <h1>Jérémie Nougier</h1>
         <h2><span id="typing"></span></h2>
         <p>Étudiant en géomatique | SIG, télédétection & analyse spatiale</p>
-        <a href="#contact" class="btn">Me contacter</a>
+        <a href="mailto:jeremie.nougier@etu.univ-tlse2.fr" class="btn">Me contacter</a>
     </div>
 </section>
 
 <section id="apropos" class="section">
-    <h2>À propos</h2>
+    <h2>Me connaitre</h2>
     <p>Futur Géomaticien, je combine une passion pour la géographie et l’informatique afin d’analyser et
-interpréter des données spatiales plus particulièrement des données satellitaires. Doté  de  rigueur  organisationnelle  et  d’une  capacité  à  travailler  aussi  bien  en  équipe  qu’enautonomie, je souhaite orienter ma carrière vers des missions centrées sur l’analyse d’images, afin
-d’apporter des solutions techniques et précises aux enjeux de demain.</p>
+       interpréter des données spatiales plus particulièrement des données satellitaires. Doté  de  rigueur  organisationnelle  
+       et  d’une  capacité  à  travailler  aussi  bien  en  équipe  qu’en 
+       autonomie, je souhaite orienter ma carrière vers des missions centrées sur l’analyse d’images, afin
+       d’apporter des solutions techniques et précises aux enjeux de demain.
+    </p>
 </section>
 
 <section id="competences" class="section">
-    <h2>Compétences</h2>
+    <h2>Ce que je sais faire</h2>
 
     <div class="grille_competences">
         <div class="categorie_competence">
             <h3>SIG & Data</h3>
             <ul>
-                <li>QGIS / ArcGIS</li>
-                <li>PostGIS / SQL</li>
-                <li>PgAdmin4</li>
-                <li>Rstudio</li>
-                <li>Traitement raster</li>
-                <li>Analyse spatiale</li>
+                <li><i class="fa-solid fa-map"></i> QGIS / ArcGIS</li>
+                <li><i class="fa-solid fa-database"></i> PostGIS / SQL</li>
+                <li><i class="fa-solid fa-server"></i> PgAdmin4</li>
+                <li><i class="fa-solid fa-chart-line"></i> Rstudio</li>
+                <li><i class="fa-solid fa-image"></i> Traitement raster</li>
+                <li><i class="fa-solid fa-location-dot"></i> Analyse spatiale</li>
             </ul>
         </div>
 
         <div class="categorie_competence">
             <h3>Programmation</h3>
             <ul>
-                <li>Python</li>
-                <li>Arcpy</li>
-                <li>OTB (Orfeo Toolbox)</li>
-                <li>JavaScript</li>
-                <li>HTML / CSS</li>
-                <li>Google Earth Engine</li>
+                <li><i class="fa-brands fa-python"></i> Python</li>
+                <li><i class="fa-solid fa-code-branch"></i> Arcpy</li>
+                <li><i class="fa-solid fa-gamepad"></i> OTB (Orfeo Toolbox)</li>
+                <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                <li><i class="fab fa-html5"></i> HTML</li>
+                <li><i class="fab fa-css3-alt"></i> CSS</li>
             </ul>
         </div>
 
         <div class="categorie_competence">
-            <h3>Langues</h3>
+            <h3>Loisirs</h3>
             <ul>
-                <li>Français — natif</li>
-                <li>Anglais — avancé</li>
+                <li><i class="fa-solid fa-person-hiking"></i> Randonnée</li>
+                <li><i class="fa-solid fa-person-skiing"></i> Ski</li>
+                <li><i class="fa-solid fa-fish-fins"></i> Plongée</li>
+                <li><i class="fa-solid fa-camera"></i> Photographie</li>
+                <li><i class="fa-solid fa-person-biking"></i> VTT</li>
+                <li><i class="fa-solid fa-jet-fighter"></i> Aéronautique</li>
             </ul>
         </div>
     </div>
 </section>
 
 <section id="formation" class="section">
-    <h2>Formation</h2>
+    <h2>Ma Formation</h2>
 
     <div class="liste_formation">
         <div class="formation">
-            <h3>Université Grenoble ALpes</h3>
+            <h3><img src="images/images_formation/IUGA.svg" alt="Logo UGA" class="formation-logo"> Université Grenoble Alpes</h3>
             <p><strong>Diplôme :</strong> Licence en Géographie Spécialité aménagement du territoire</p>
             <p><strong>Années :</strong> 2021 – 2024</p>
 
         </div>
 
         <div class="formation3">
-            <h3>Université Grenoble Alpes</h3>
+            <h3><img src="images/images_formation/IUGA.svg" alt="Logo UGA" class="formation-logo"> Université Grenoble Alpes</h3>
             <p><strong>Diplôme :</strong> Master 1 en Géomatique</p>
             <p><strong>Années :</strong> 2024 – 2025</p>
         </div>
         
         <div class="formation2">
-            <h3>Université Toulouse Jean Jaurès   INP-ENSAT</h3>
+            <h3><img src="images/images_formation/Toulouse_JJ.png" alt="Logo Toulouse" class="formation-logo"> Université Toulouse Jean Jaurès   INP-ENSAT</h3>
             <p><strong>Diplôme :</strong> Master en Géomatique</p>
             <p><strong>Années :</strong> 2025 – 2027</p>
         </div>
     </div>
 </section>
 
+
+
+
+
 <section id="experiences" class="section">
-    <h2>Expériences</h2>
+    <h2>Mes Expériences</h2>
 
-    <div class="timeline">
-        <div class="timeline-item">
-            <h3>Stagaire Géomaticien – 2026</h3>
-            <p>Type d'éxpérience : STAGE</p>
-            <p>Organisme : Egis Group</p>
-            <p>Durée : 6 mois</p>
+    <div class="experiences-container">
+        <div class="timeline-left">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Stagaire Géomaticien – 2026</h3>
+                    <p>Type d'éxpérience : STAGE</p>
+                    <p>Organisme : Egis Group</p>
+                    <p>Durée : 6 mois</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Stagaire Cartographe / Géomaticien – 2025</h3>
+                    <p>Type d'éxpérience : STAGE</p>
+                    <p>Organisme : Laboratoire Pacte</p>
+                    <p>Durée : 3 mois</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Stagaire Géomaticien – 2024</h3>
+                    <p>Type d'éxpérience : STAGE</p>
+                    <p>Organisme : Géosiapp</p>
+                    <p>Durée : 1 mois</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Dessinateur SIG / Adjoint administratif territorial – 2023 & 2024</h3>
+                    <p>Type d'éxpérience : CDD</p>
+                    <p>Organisme : Métropole de Lyon</p>
+                    <p>Durée : 4 mois</p>
+                </div>
+            </div>
         </div>
 
-        <div class="timeline-item">
-            <h3>Stagaire Cartographe / Géomaticien – 2025</h3>
-            <p>Type d'éxpérience : STAGE</p>
-            <p>Organisme : Laboratoire Pacte</p>
-            <p>Durée : 3 mois</p>
-        </div>
+        <div class="descriptions-right">
+            <div class="description-item">
+                <h4>Egis Group</h4>
+                <p>Dessin des SIG et création de bases de données géographiques.</p>
+            </div>
 
-        <div class="timeline-item">
-            <h3>Stagaire Géomaticien – 2024</h3>
-            <p>Type d'éxpérience : STAGE</p>
-            <p>Organisme : Géosiapp</p>
-            <p>Durée : 1 mois</p>
-        </div>
+            <div class="description-item">
+                <h4>Laboratoire Pacte</h4>
+                <p>Dessin et cartographie pour l'analyse spatiale et les données territoriales.</p>
+            </div>
 
-        <div class="timeline-item">
-            <h3>Dessinateur SIG / Adjoint administratif territorial – 2023 & 2024</h3>
-            <p>Type d'éxpérience : CDD</p>
-            <p>Organisme : Métropole de Lyon</p>
-            <p>Durée : 4 mois</p>
+            <div class="description-item">
+                <h4>Géosiapp</h4>
+                <p>Stage de découverte en géomatique et manipulation de données SIG.</p>
+            </div>
+
+            <div class="description-item">
+                <h4>Métropole de Lyon</h4>
+                <p>Dessin SIG et gestion administrative des données spatiales de la collectivité.</p>
+            </div>
         </div>
     </div>
 </section>
 
 <section id="projets" class="section">
-    <h2>Projets</h2>
+    <h2>Mes Projets</h2>
 
     <div class="grille_projets">
         <article class="carte_projet">
-            <img src="images/icu.png" alt="Carte de vulnérabilité urbaine face aux vagues de chaleur">
+            <img src="images/images_main_page/icu.png" alt="Carte de vulnérabilité urbaine face aux vagues de chaleur">
             <h3>Vulnérabilité urbaine et chaleur</h3>
             <p>Analyse spatiale sous QGIS et Python pour identifier les zones urbaines
                 sensibles aux vagues de chaleur (ICU) sur le département du Tarn.</p>
@@ -157,21 +197,21 @@ d’apporter des solutions techniques et précises aux enjeux de demain.</p>
         </article>
 
         <article class="carte_projet">
-            <img src="images/teledec.png" alt="Classification raster">
+            <img src="images/images_main_page/teledec.png" alt="Classification raster">
             <h3>Classification raster</h3>
             <p>Classification d’images satellite et analyse environnementale.</p>
             <a href="lien_vers_projet2.html" class="btn" target="_blank" rel="noopener noreferrer">Voir le projet</a>
         </article>
 
         <article class="carte_projet">
-            <img src="images/Logo-Naval-Group.png" alt="projet qgis naval group" type = "image/png">
+            <img src="images/images_main_page/Logo-Naval-Group.png" alt="projet qgis naval group" type = "image/png">
             <h3>Plugin QGIS Naval Group</h3>
             <p>Transformation données NAIADE</p>
             <a href="lien_vers_projet4.html" class="btn" target="_blank" rel="noopener noreferrer">Voir le projet</a>
         </article>
 
         <article class="carte_projet">
-            <img src="images/grenoble_jerem.jpg" alt="Mes photos" type = "image/jpeg">
+            <img src="images/images_main_page/grenoble_jerem.jpg" alt="Mes photos" type = "image/jpeg">
             <h3>Mes Photos</h3>
             <p>Album personnel</p>
             <a href="photos.html" class="btn" target="_blank" rel="noopener noreferrer">Voir mes photos</a>
@@ -180,15 +220,38 @@ d’apporter des solutions techniques et précises aux enjeux de demain.</p>
 </section>
 
 <section id="contact" class="section">
-    <h2>Contact</h2>
+    <h2>Mes Réalisations Cartographiques</h2>
 
-    <form>
-        <input type="text" placeholder="Nom" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Message" required></textarea>
-        <button type="submit" class="btn">Envoyer</button>
-    </form>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-slide fade">
+                <img src="images/images_competences/carte1.png" alt="Réalisation cartographique 1">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="images/images_competences/carte2.png" alt="Réalisation cartographique 2">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="images/images_competences/carte3.png" alt="Réalisation cartographique 3">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="images/images_competences/carte4.png" alt="Réalisation cartographique 4">
+            </div>
 
+            <!-- Navigation -->
+            <a class="carousel-control prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="carousel-control next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        <!-- Dots -->
+        <div class="carousel-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <p class="reseaux-titre">Me suivre sur :</p>
     <div class="reseaux_sociaux">
         <a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9mie-nougier-84421b398/" target="_blank">LinkedIn</a>
         <a href="https://github.com/Jerem-Tolosa" target="_blank">GitHub</a>
@@ -198,6 +261,41 @@ d’apporter des solutions techniques et précises aux enjeux de demain.</p>
 <footer>
     <p>© 2026 Jérémie Nougier – Portfolio Géomatique</p>
 </footer>
+
+<script>
+    let currentIndex = 1;
+    showSlides(currentIndex);
+
+    function changeSlide(n) {
+        showSlides(currentIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(currentIndex = n);
+    }
+
+    function showSlides(n) {
+        const slides = document.getElementsByClassName('carousel-slide');
+        const dots = document.getElementsByClassName('dot');
+
+        if (n > slides.length) {
+            currentIndex = 1;
+        }
+        if (n < 1) {
+            currentIndex = slides.length;
+        }
+
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+        }
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].classList.remove('active');
+        }
+
+        slides[currentIndex - 1].style.display = 'block';
+        dots[currentIndex - 1].classList.add('active');
+    }
+</script>
 
 </body>
 </html>
